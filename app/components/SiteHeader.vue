@@ -5,10 +5,12 @@ const links = [
   { label: 'About', href: '/#about' },
   { label: 'Contact', href: '/#contact' }
 ]
+
+const route = useRoute()
 </script>
 
 <template>
-  <header class="site-header">
+  <header v-if="route.path !== '/'" class="site-header">
     <NuxtLink class="wordmark" to="/" aria-label="Irham Maulana Johani, home">IMJ<span>•</span></NuxtLink>
     <nav aria-label="Main navigation">
       <NuxtLink v-for="link in links" :key="link.label" :to="link.href">{{ link.label }}</NuxtLink>
