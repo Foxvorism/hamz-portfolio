@@ -39,10 +39,11 @@ export const projects: Project[] = [
 ]
 
 export const experience = [
-  { role: 'Frontend Web Developer', organization: 'Solu Filantropi Teknologi', period: 'Period to confirm' },
-  { role: 'Programming Teacher', organization: 'Timedoor', period: 'Period to confirm' },
-  { role: 'Founder / CEO · Project Manager', organization: 'Sutoori Production', period: 'Period and title details to confirm' },
-  { role: 'GIS Intern', organization: 'PT Nusantara Secom Infotech', period: 'Period to confirm' }
+  { kind: 'work' as const, role: 'Frontend Web Developer', organization: 'Solu Filantropi Teknologi', period: 'Period to confirm' },
+  { kind: 'work' as const, role: 'Programming Teacher', organization: 'Timedoor', period: 'Period to confirm' },
+  { kind: 'work' as const, role: 'Founder / CEO · Project Manager', organization: 'Sutoori Production', period: 'Period and title details to confirm' },
+  { kind: 'work' as const, role: 'GIS Intern', organization: 'PT Nusantara Secom Infotech', period: 'Period to confirm' },
+  { kind: 'education' as const, role: 'Education history', organization: 'Institution and program to confirm', period: 'Details to confirm' }
 ]
 
 export const profile = {
