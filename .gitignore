@@ -25,3 +25,4 @@ logs
 
 *.agents
 AGENTS.md
+.taste-skill/direction.json
